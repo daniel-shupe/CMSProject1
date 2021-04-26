@@ -1,0 +1,397 @@
+/*
+    web3.css
+    Author: Daniel Shupe
+    July 12, 2020
+    CSIS 410
+    Liberty University
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+/* form css */
+textarea {
+    resize: none;
+}
+
+div.form {
+    display: block;
+}
+    
+form {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+form p{
+    color: skyblue;
+    font-size: larger;
+}
+
+/* body css */
+body{
+    background-color: black;
+    color: orange;
+}
+
+/* h1 css */
+h1 {
+    text-align: center;
+}
+
+/* results table css */
+table.results {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.results td{
+    padding-right: 10px;
+}
+
+.results td:nth-of-type(2) {
+    text-align: right;
+    padding-left: 25px;
+}
+
+.results th{
+    color: skyblue;
+}
+
+.results tfoot tr:nth-of-type(3){
+    color: skyblue;
+}
+
+.blank {
+    height: 20px !important;
+}
+
+/* product table css */
+.product table{
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.product thead, th{
+    color: darkblue;
+    border: 2px solid white;
+}
+
+.product td{
+    color: skyblue;
+    border: 1px solid white;
+}
+
+.product td:nth-of-type(1) {
+    width: 10%;
+    vertical-align: middle;
+}
+.product td:nth-of-type(2) {
+    width: 75%;
+    text-align: justify;
+}
+
+.product td:nth-of-type(3) {
+    width: 5%;
+    text-align: center;
+    color: orange;
+    font-weight: bold;
+}
+
+.product td:nth-of-type(4) {
+    width: 5%;
+    text-align: center;
+}
+
+.product td:nth-of-type(5) {
+    width: 5%;
+    text-align: center;
+}
+
+.product img {
+    height: auto%;
+    width: 100%;
+}
+
+.product button {
+    background-color: orange;
+    color: white;
+    padding: 1px;
+}
+
+.product input[type=submit] {
+    background-color: orange;
+    color: white;
+}
+
+.product input[type=text] {
+    width: 20px;
+    padding: 1px;
+}
+
+#caption {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Menu */
+.menu {
+    overflow: hidden;
+    background-color: orange;
+}
+
+.menu a {
+    float: left;
+    text-align: center;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu a:hover:not(.active), .dropdown:hover {
+    background-color: skyblue;
+}
+
+.logo img {
+    max-width: 5%;
+    max-height: 5%;
+}
+
+.logo {
+    text-align: center;
+    font-size: xx-large;
+}
+
+/* bag CSS */
+.bag img {
+    max-width: 16px;
+    max-height: 14px;
+    width: 16px;
+    height: 14px;;
+}
+
+.bag table {
+    width:100%;
+}
+
+.bag table, th, td {
+    border: 1px solid white;
+}
+
+.bag thead th {
+    color: orange;
+    text-align: center;
+    font-weight: bold;
+}
+
+.bag tbody {
+    color:skyblue;
+}
+
+.bag td:nth-of-type(1) {
+    width: 20%;
+}
+
+.bag td:nth-of-type(2) {
+    width: 60%;
+}
+
+.bag td:nth-of-type(3) {
+    width: 10%;
+}
+
+.bag td:nth-of-type(4) {
+    width: 10%;
+    text-align: right;
+}
+
+.bag input[type=text] {
+    width: 90%;
+    text-align: right;
+}
+
+.bag input[type=submit] {
+    background-color: orange;
+    color: white;
+}
+
+/* login CSS */
+.login form {
+    color: white;
+    float: right;
+}
+
+.login input[type=submit] {
+    background-color: skyblue;
+    border-color: orange;
+    color: white;
+    border-style: double;
+    padding: 14px 16px;
+}
+
+.login label {
+    padding-right: 10px;
+}
+
+.login input[type=text] {
+    margin-right: 10px;
+}
+
+/* logout CSS */
+div.logout {
+    color: white;
+    float: right;
+}
+
+.logout label {
+    padding-right: 10px;
+    color: white;
+}
+
+.logout input[type=submit] {
+    background-color: skyblue;
+    border-color: orange;
+    color: white;
+    border-style: double;
+    padding: 14px 16px;
+}
+
+.new_user a {
+    float: right;
+    padding-right: 10px;
+}
+
+/* Register CSS */
+
+.register_failed p{
+    color: red;
+    text-align: center;
+}
+
+.register_successful p{
+    color: lime;
+    text-align: center;
+}
+
+.register input[type=submit] {
+    width: 100%;
+    background-color: orange;
+    color: white;
+}
+.register {
+    text-align: center;       
+}
+
+.register td:nth-of-type(1) {
+    text-align: right;
+    padding: 4px;
+}
+
+.menu li img {
+    max-width: 24px;
+    max-height: 22px;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    background-color: orange;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block;
+}
+
+.dropdown .dropbutton {
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+  }
+
+/* Article CSS */
+.article p {
+    color: skyblue;
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.article h1, h2, h3 {
+    text-align: center;
+    color: orange;
+}
+
+.article li {
+    color: skyblue;
+}
+
+.article table{
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.article th:nth-of-type(1) {
+    width: 25%;
+}
+
+.article th:nth-of-type(2) {
+    width: 50%;
+}
+
+.article th:nth-of-type(3) {
+    width: 10%;
+    text-align: center;
+}
+.article th:nth-of-type(4) {
+    width: 5%;
+    text-align: center;
+}
+.article th:nth-of-type(5) {
+    width: 10%;
+    text-align: center;
+}
+.article td:nth-of-type(3) {
+    text-align: center;
+}
+.article td:nth-of-type(4) {
+    text-align: center;
+}
+.article td:nth-of-type(5) {
+    text-align: right;
+}
+
+.class_name {
+    color: orange;
+    font-size: larger;
+    text-align: left;
+}
+
+/* Content Manage CSS */
+
+.manage input[type=submit] {
+    padding: 7px 16px;
+    background-color: skyblue;
+    color: white;
+}
+
+.manage h2{
+    color:red;
+}
